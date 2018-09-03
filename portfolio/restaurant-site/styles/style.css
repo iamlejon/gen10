@@ -62,3 +62,8 @@ footer p{
         width: 100%;
     }
 }
+
+#contact {
+    width: 40%;
+    margin: 0 auto;
+}
