@@ -12,3 +12,7 @@ nav .btn {
     background-color: #5b7d87;
     color: #fef9ff;
 }
+
+nav .btn:hover {
+    font-weight: bold;
+}
