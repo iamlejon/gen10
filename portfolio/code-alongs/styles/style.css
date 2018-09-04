@@ -1,3 +1,8 @@
+/*
+Creator: Dominique McCloud
+Date created: 9/4/2018
+Date last modified: 9/4/2018
+*/
 
 caption {
     font-weight: bold;
@@ -6,9 +11,10 @@ caption {
 }
 
 table, th, td {
-    border: 1px solid #0d1f2d;
+    border: 1px solid #000;
     border-collapse: collapse;
     padding: 5px 10px;
+    color: #fff;
 }
 
 table {
@@ -18,14 +24,15 @@ table {
 
 tr {
     height: 30px;
+    background-color: #DD516A;
 }
 
 th {
-    background-color: #546a7b;
-    color: #f2eded;
+    background-color: #52141f;
+    color: #fff;
 }
 
 tr:nth-child(odd) {
-    background-color: #e4c4ad;
+    background-color: #a5152e;
 }
 
