@@ -7,3 +7,8 @@ nav {
     padding-bottom: 12px;
     margin-bottom: 3px;
 }
+
+nav .btn {
+    background-color: #5b7d87;
+    color: #fef9ff;
+}
