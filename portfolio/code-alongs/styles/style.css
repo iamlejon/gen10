@@ -4,7 +4,7 @@ Date created: 9/4/2018
 Date last modified: 9/4/2018
 */
 
-header {
+header, footer{
     background-color: #a5152e;
     color: #fff;
     height: 100px;
@@ -14,6 +14,14 @@ header {
 
 h1 {
     font-size: 2.5em;
+}
+
+nav {
+    margin-top: 4px;
+    background-color: #fff;
+    border-top: 3px solid #6f1625;
+    border-bottom: 3px solid #6f1625;
+    
 }
 
 body {
