@@ -5,6 +5,16 @@ Date created: 9/4/2018
 Date last modified: 9/4/2018
 */
 
+body {
+    background-color: #0D0809;
+    font-family: arial, helvetica, sans-serif;
+    color: #fff;
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid #a5152e;
+    padding: 2px;
+}
+
 header, footer{
     background-color: #a5152e;
     color: #fff;
@@ -35,12 +45,6 @@ a:visited {
 
 a:hover {
     color: lightblue;
-}
-
-body {
-    background-color: #0D0809;
-    font-family: arial, helvetica, sans-serif;
-    color: #fff;
 }
 
 caption {
