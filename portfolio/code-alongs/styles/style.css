@@ -1,3 +1,4 @@
+@charset "utf-8";
 /*
 Creator: Dominique McCloud
 Date created: 9/4/2018
@@ -18,16 +19,28 @@ h1 {
 
 nav {
     margin-top: 4px;
-    background-color: #fff;
-    border-top: 3px solid #6f1625;
-    border-bottom: 3px solid #6f1625;
+    background-color: #3F0E16;
+    border-top: 3px dashed #6f1625;
+    border-bottom: 3px dashed #6f1625;
     
+}
+
+a:link {
+    color: #FFD846;
+}
+
+a:visited {
+    color: #5d4cce;
+}
+
+a:hover {
+    color: lightblue;
 }
 
 body {
     background-color: #0D0809;
     font-family: arial, helvetica, sans-serif;
-    color: #719761;
+    color: #fff;
 }
 
 caption {
