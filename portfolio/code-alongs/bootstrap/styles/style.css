@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+nav {
+    border-top: thin #5b7d87 solid;
+    border-bottom: thin #5b7d87 solid;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 3px;
+}
