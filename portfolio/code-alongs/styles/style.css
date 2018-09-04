@@ -35,12 +35,31 @@ nav {
     
 }
 
+nav a {
+    background-color: #FF4A4A;
+    color: #fff;
+    padding: 8px;
+    border: thin solid #752b1b;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 20px;
+    width: 100px;
+   float: left;
+}
+
+article {
+    margin-bottom: 16px;
+}
+
 a:link {
-    color: #FFD846;
+    color: #52141f;
 }
 
 a:visited {
-    color: #5d4cce;
+    background-color: #6f1625;
+    color: #54B0B4;
+  
 }
 
 a:hover {
