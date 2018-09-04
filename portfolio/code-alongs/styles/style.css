@@ -4,6 +4,24 @@ Date created: 9/4/2018
 Date last modified: 9/4/2018
 */
 
+header {
+    background-color: #a5152e;
+    color: #fff;
+    height: 100px;
+    text-align: center;
+    padding: 30px 10px 20px 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+body {
+    background-color: #0D0809;
+    font-family: arial, helvetica, sans-serif;
+    color: #719761;
+}
+
 caption {
     font-weight: bold;
     font-size: 1.2em;
