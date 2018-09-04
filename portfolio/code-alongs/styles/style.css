@@ -27,12 +27,31 @@ h1 {
     font-size: 2.5em;
 }
 
+a:link {
+    color: #52141f;
+}
+
+a:visited {
+    background-color: #6f1625;
+    color: #54B0B4;
+  
+}
+
+a:hover {
+    color: lightblue;
+}
+
 nav {
     margin-top: 4px;
     background-color: #3F0E16;
     border-top: 3px dashed #6f1625;
     border-bottom: 3px dashed #6f1625;
+    color: #fff;
     
+}
+
+nav a:link {
+    color: #fff;
 }
 
 nav a {
@@ -48,23 +67,23 @@ nav a {
    float: left;
 }
 
+nav a:active {
+    font-weight: bold;
+}
+
+nav a:visited {
+    color: #54B0B4;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color:#FF4A4A;
+}
+
 article {
     margin-bottom: 16px;
 }
 
-a:link {
-    color: #52141f;
-}
-
-a:visited {
-    background-color: #6f1625;
-    color: #54B0B4;
-  
-}
-
-a:hover {
-    color: lightblue;
-}
 
 caption {
     font-weight: bold;
