@@ -15,9 +15,14 @@
         <!-- Internal Stylesheet -->
 
         <style>
-            #contact {
-            width: 400px;
+            #contact-form {
             margin: 0 auto;
+            padding: 40px;
+            background-color: #fff;
+            }
+
+            .required {
+                font-weight: bold;
             }
         </style>
 
@@ -30,32 +35,33 @@
                     <h1 id="restaurant-name">Dessert Island</h1>
             </header>
         
-        <hr />
+        
 
         <nav>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </nav>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="menu.html">Menu</a></p>
+                <p><a href="contact.html">Contact Us</a></p>
+                <div class="clear-float"></div>
+            </nav>
             
-        <hr />
+        
 
         <section>
             
-            <article id="contact">
+            <article id="contact-form">
                
                     <form action="submit.html" method="POST">
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="name"> <br /><br />
+                            <label for="name" class="required">Name:</label>
+                            <input type="text" id="name" name="name" required> <br /><br />
         
-                            <label for="email">Email: </label>
-                            <input type="text" id="email" name="email"> <br /><br />
+                            <label for="email" class="required">Email: </label>
+                            <input type="text" id="email" name="email" required> <br /><br />
         
-                            <label for="phone">Phone:</label>
-                            <input type="text" id="phone" name="phone"> <br /><br />
+                            <label for="phone" class="required">Phone:</label>
+                            <input type="text" id="phone" name="phone" required> <br /><br />
         
-                            <label for="contact">Reason for Inquiry:</label>
-                            <select id="contact" name="contact">
+                            <label for="contact" class="required">Reason for Inquiry:</label>
+                            <select id="contact" name="contact" required>
                                 <option value="catering" selected>Catering</option>
                                 <option value="privateParty"> Private Party</option>
                                 <option value="feedback"> Feedback</option>
@@ -97,8 +103,9 @@
             
         </section>
 
+        <hr />
         <footer>
-            <hr />
+           
             <p>5678 Marvin Blvd, Dallas, TX 75001</p>
             <p>832-555-5555</p>
         </footer>
