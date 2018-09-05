@@ -9,25 +9,63 @@
     <head>
         <meta charset="utf-8">
         <title>Menu</title>
-        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <link rel="stylesheet" type="text/css" href="styles/restaurantStyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Happy+Monkey" rel="stylesheet">
+
+        <style>
+
+            #menu {
+                width: 100%;
+                margin: 0 auto;
+                background-color: #692E2E;
+                color: #ff8282;
+                font-weight: 525;
+            }
+
+            .menu-item {
+                display: inline-block;
+                width: 30%;
+                padding: 1%;
+                text-align: center;
+            }
+
+            .menu-item h3, h4{
+                color: #fff;
+            }
+
+            .menu-item .row:after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            @media screen and (max-width: 600px) {
+                .menu-item {
+                    width: 100%;
+                }
+            }
+        </style>
+
+
     </head>
 
 
     <body>
 
             <header>
-                    <h1>Dessert Island</h1>
+                    <h1 id="restaurant-name">Dessert Island</h1>
             </header>
         
-        <hr />
+       
 
         <nav>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <p><a href="index.html">Home</a></p>
+            <p><a href="menu.html">Menu</a></p>
+            <p><a href="contact.html">Contact Us</a></p>
+            <div class="clear-float"></div>
         </nav>
             
-        <hr />
+     
 
         <section>
             
@@ -40,7 +78,7 @@
                         <p>
                             Our one of a kind strawberry cheesecake will rock your world.  Topped with fresh strawberries and a deculant strawberry glaze.  This goes great with our signature watermelon lime-aide.
                             <br />
-                            $7.25
+                            <h4>$7.25</h4>
                         </p>
                         
                     </div>
@@ -50,7 +88,7 @@
                             <p>
                                 Our Hot Fudge Brownie is served with our oh so tasty homemade Vanilla icecream and will melt in your mouth. Our brownies are chewy and soft in all the right places, you'll definitely want more.
                                 <br />
-                                $6.50
+                                <h4>$6.50</h4>
                             </p>
                             
                     </div>
@@ -60,7 +98,7 @@
                             <p>
                                 Our frozen yogurt will send even the dullest person's taste buds into a frenzy.  We have all the flavors! From Raspberry to Bubblegum Passion, try a sample of each or mix and match your favs!
                                 <br />
-                                $5.85
+                                <h4>$5.85</h4>
                             </p>
                     </div>
 
@@ -74,7 +112,7 @@
                         <p>
                             Our apple pie is made with the freshest apples delivered daily for a refreshingly sweet taste.  For $1 extra try adding our homemade Vanilla icecream!  You'll be glad you did.
                             <br />
-                            $6.25
+                            <h4>$6.25</h4>
                         </p>
                         
                     </div>
@@ -84,7 +122,7 @@
                             <p>
                                 Come on, you know there's nothing better than your grandma's Peach Cobbler..well..except for OUR grandma's Peach Cobbler.  For $1 extra try adding our homemade Vanilla icecream!
                                 <br />
-                                $6.50
+                                <h4>$6.50</h4>
                             </p>
                             
                     </div>
@@ -94,7 +132,7 @@
                             <p>
                                 Did someone say Banana Pudding? Yes, be prepared our Banana Pudding is out of this world.  Are your senses even ready?  Made with waffers Vanilla Crackers, you'll love this!
                                 <br />
-                                $7.25
+                                <h4>$7.25</h4>
                             </p>
                     </div>
 
