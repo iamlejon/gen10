@@ -43,6 +43,7 @@ function rollDice() {
         document.getElementById("startingBetDisplay").innerText = (startingBet);
         document.getElementById("rolls").innerText = totalRolls;
         document.getElementById("resultsDisplay").innerText = (sum);
+        document.getElementById("submitButton").innerText = "Play Again?";
         return false;
     }
      
