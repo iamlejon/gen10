@@ -8,24 +8,25 @@
 <body onload="placeBetGreeting();">
 <div class="container">
     <h1>Lucky Sevens</h1>
-    <div class="row">
-            <div class="panel panel-default" style="width:20%">
-            <div class="panel-body" id="startingBet">
-            </div>
+    <div class="row" >
+            <h3>Starting Bet</h3><div class="panel panel-default" style="width:20%">
+            <div class="panel-body" id="startingBet"></div>
             </div>
     </div>
 
     
-<!--
-    <form name="displayEvens" onsubmit="return validateItems();">
+
+    <form name="displayEvens" onsubmit="return rollDice();">
             <div class="form-group">
                 <label for="startingBet">Starting Bet</label>
-                <input type="number" class="form-control" id="startingBet" style="width:20%">
+                <!-- <input type="number" class="form-control" id="startingBet" style="width:20%"> -->
             </div>
-            <button type="submit" id="submitButton" class="btn btn-default">Play</button>
+            <button type="submit" id="submitButton" class="btn btn-primary">Play</button>
             
-    </form> -->
-    <table id="results" class="table table-striped" style="display:hidden;">
+    </form> 
+
+
+    <table id="results" class="table table-striped" style="display:none;">
         <hr />
         <h1> Results</h1>
         <thead>
