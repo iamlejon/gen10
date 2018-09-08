@@ -10,24 +10,19 @@
     <h1>Lucky Sevens</h1>
     <form name="displayEvens" onsubmit="return validateItems();">
             <div class="form-group">
-                <label for="startPoint">Starting Point</label>
-                <input type="number" class="form-control" id="startPoint" style="width:20%">
+                <label for="startingBet">Starting Bet</label>
+                <input type="number" class="form-control" id="startingBet" style="width:20%">
             </div>
-            <div class="form-group">
-                <label for="endPoint">Ending Point</label>
-                <input type="number" class="form-control" id="endPoint" style="width:20%">
-            </div>           
-            <div class="form-group">
-                <label for="step">Step</label>
-                <input type="number" class="form-control" id="step" style="width:20%">
-            </div>  
-            <button type="submit" id="submitButton" class="btn btn-default">Display Evens</button>
+            <button type="submit" id="submitButton" class="btn btn-default">Play</button>
             
     </form>
-    <table id="results" class="table table-striped" style="display:block;">
+    <table id="results" class="table table-striped" style="display:hidden;">
+        <hr />
+        <h1> Results</h1>
         <thead>
             <tr>
-                <th>Results</th>
+                <th>Starting Bet</th>
+                <th>$<span id="startingBetDisplay"></th>
             </tr>
         </thead>
         <tbody>
