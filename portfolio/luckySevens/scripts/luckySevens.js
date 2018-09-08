@@ -22,6 +22,14 @@ var totalRolls = 0;
 
 
 function rollDice() {
+    if(playerAmount==0) {
+        totalRolls=0;
+        startingBet=0;
+        document.getElementById("results").style.display = "none";
+        document.getElementById("submitButton").innerText = "Play";
+        placeBetGreeting();
+        return false;
+    }
         while(Number(playerAmount)>Number(0)){
             diceA = Math.floor(Math.random() * 6) + 1;
             diceB = Math.floor(Math.random() * 6) + 1;
