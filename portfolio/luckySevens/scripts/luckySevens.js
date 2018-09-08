@@ -18,6 +18,8 @@ var diceA = 0;
 var diceB = 0;
 var sum;
 var totalRolls = 0;
+var winnings = 0;
+var pairs = {};
 
 
 
@@ -25,6 +27,9 @@ function rollDice() {
     if(playerAmount==0) {
         totalRolls=0;
         startingBet=0;
+        sum=0;
+        winnings=0;
+        pairs = {};
         document.getElementById("results").style.display = "none";
         document.getElementById("submitButton").innerText = "Play";
         placeBetGreeting();
@@ -37,19 +42,27 @@ function rollDice() {
 
             if(sum==7) {
                 playerAmount = parseFloat(playerAmount) + parseFloat(4.00);
+                winnings += 4;
+                pairs[totalRolls] = winnings;
             }
             else {
                 playerAmount = parseFloat(playerAmount) - parseFloat(1.00);
+                winnings=0;
             }
         
             totalRolls++;
         }
        
+        let keys = Object.keys(pairs);
+        keys.sort(function(a,b){return pairs[b]-pairs[a];});
+        let rollCountAtHighestWon = keys[0];
+        let highestWon = pairs[rollCountAtHighestWon];
        
         document.getElementById("results").style.display = "block";
-        document.getElementById("current").innerText = (playerAmount);
         document.getElementById("startingBetDisplay").innerText = (startingBet);
         document.getElementById("rolls").innerText = totalRolls;
+        document.getElementById("highestRollCountDisplay").innerText = rollCountAtHighestWon;
+        document.getElementById("highestWonDisplay").innerText = highestWon;
         document.getElementById("resultsDisplay").innerText = (sum);
         document.getElementById("submitButton").innerText = "Play Again?";
         return false;
