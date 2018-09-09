@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+body {
+    max-width: 53%;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0C9090;
+}
+
+img {
+	width: 100%;
+}
+
+#restaurant-name {
+    font-family: 'Happy Monkey', cursive;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    color: rgb(236, 231, 232);
+}
+
+#main {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+#content {
+    margin: 5px auto;
+    color: #fff;
+    background-color:#575372;
+    padding: 10px;
+    border: thin solid #000;
+}
+
+
+nav {
+    margin-top: 4px;
+    background-color: #3F0E16;
+    border-top: 2px solid #575372;
+    border-bottom: 2px solid #575372;
+    background-color: #fff;
+    padding: 0 10px;
+    
+}
+
+nav a {      
+        padding: 8px;
+        text-align: center;
+        display: block;
+        margin: 10px;
+       float: left;
+}
+
+nav a:link {
+    color: #80488C;
+}
+
+nav a:visited {
+    color: #00B6C7;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+nav a:active {
+    text-decoration: none;
+}
+
+.clear-float {
+    clear:both;
+}
+
+footer {
+
+    position: relative;
+    background-color: #fff;
+    right: 0;
+    bottom: 0;
+    left: 0; 
+    margin: 0 auto;
+    border: thin solid #000;
+    padding: 10px;
+}
+
+footer p{
+    margin: 0 auto;
+    text-align: center;
+}
+
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--
+    Name: Dominique McCloud
+    Date Created: September 3, 2018
+    Most recent revision: 9/3/18
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Contact Us</title>
+        <link rel="stylesheet" type="text/css" href="styles/restaurantStyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Happy+Monkey" rel="stylesheet">
+
+        <!-- Internal Stylesheet -->
+
+        <style>
+            #contact-form {
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #fff;
+            }
+
+            .required {
+                font-weight: bold;
+            }
+        </style>
+
+    </head>
+
+
+    <body>
+
+            <header>
+                    <h1 id="restaurant-name">Dessert Island</h1>
+            </header>
+        
+        
+
+        <nav>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="menu.html">Menu</a></p>
+                <p><a href="contact.html">Contact Us</a></p>
+                <div class="clear-float"></div>
+            </nav>
+            
+        
+
+        <section>
+            
+            <article id="contact-form">
+               
+                    <form action="submit.html" method="POST">
+                            <label for="name" class="required">Name:</label>
+                            <input type="text" id="name" name="name" required> <br /><br />
+        
+                            <label for="email" class="required">Email: </label>
+                            <input type="text" id="email" name="email" required> <br /><br />
+        
+                            <label for="phone" class="required">Phone:</label>
+                            <input type="text" id="phone" name="phone" required> <br /><br />
+        
+                            <label for="contact" class="required">Reason for Inquiry:</label>
+                            <select id="contact" name="contact" required>
+                                <option value="catering" selected>Catering</option>
+                                <option value="privateParty"> Private Party</option>
+                                <option value="feedback"> Feedback</option>
+                                <option value="other"> Other</option>
+                            </select>
+        
+                            <br />
+                            <br />
+
+                            <label for="info">Additional Information</label>
+                            <textarea id="info" name="info"></textarea><br /><br />
+                            
+                                Have you been to the restaurant?<br />
+                                <input type="radio" id="choice1" name="questionnaire" value="no" checked="checked">
+                                <label for="choice1">No</label>
+                                <input type="radio" id="choice2" name="questionnaire" value="yes">
+                                <label for="choice2">Yes</label><br />
+
+                                <br />
+                                <br />
+                                    Best days to contact you: 
+                                    <input type="checkbox" id="monday" name="day" value="monday">
+                                    <label for="monday">M</label>
+                                    <input type="checkbox" id="tuesday" name="day" value="tuesday">
+                                    <label for="tuesday">T</label>
+                                    <input type="checkbox" id="wednesdays" name="day" value="wednesday">
+                                    <label for="wednesday">W</label>
+                                    <input type="checkbox" id="thursday" name="day" value="thursday">
+                                    <label for="thursday">Th</label>
+                                    <input type="checkbox" id="friday" name="day" value="friday">
+                                    <label for="friday">F</label><br />
+
+                            <p><input type="submit" name="submit" value="Send Request"></p>
+        
+                        </form>
+
+            </article>
+
+            
+        </section>
+
+        <hr />
+        <footer>
+           
+            <p>5678 Marvin Blvd, Dallas, TX 75001</p>
+            <p>832-555-5555</p>
+        </footer>
+            
+
+    </body>
+</html>
