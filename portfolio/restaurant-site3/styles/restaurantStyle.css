@@ -1,5 +1,42 @@
 @charset "utf-8";
 
+
+@media all and (max-width: 500px) { /* screen size until 500px */
+    body {
+        font-size: 1.4em; 
+        }
+}
+
+@media all and (max-width: 800px) { /* screen size until 800px */
+    #menu h3 {
+        font-size: 1.4em; 
+        }
+    .px-5 p {
+        font-size: 1.4em;
+    }
+}
+
+@media all and (max-width: 620px) { /* screen size until 620px */
+    #menu h3 {
+        font-size: 1.3em; 
+        }
+}
+
+@media all and (max-width: 415px) { /* screen size until 415px */
+    .fa-5x {
+        font-size: 3em; 
+        }
+}
+
+@media all and (max-width: 400px) { /* screen size until 400px */
+    .py-5 {
+        font-size: 1em; 
+        }
+    .card-title {
+        font-size: 1.6em;
+    }
+}
+
 body {
     max-width: 90%;
     margin: 40px auto;
