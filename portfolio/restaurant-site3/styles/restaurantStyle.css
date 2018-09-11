@@ -1,43 +1,7 @@
 @charset "utf-8";
 
-
-@media all and (max-width: 500px) { /* screen size until 500px */
-    body {
-        font-size: 1.4em; 
-        }
-}
-
-@media all and (max-width: 800px) { /* screen size until 800px */
-    #menu h3 {
-        font-size: 1.4em; 
-        }
-    .px-5 p {
-        font-size: 1.4em;
-    }
-}
-
-@media all and (max-width: 620px) { /* screen size until 620px */
-    #menu h3 {
-        font-size: 1.3em; 
-        }
-}
-
-@media all and (max-width: 415px) { /* screen size until 415px */
-    .fa-5x {
-        font-size: 3em; 
-        }
-}
-
-@media all and (max-width: 400px) { /* screen size until 400px */
-    .py-5 {
-        font-size: 1em; 
-        }
-    .card-title {
-        font-size: 1.6em;
-    }
-}
-
 body {
+    color: #fff;
     max-width: 90%;
     margin: 40px auto;
     margin-top: 60px;
@@ -61,6 +25,10 @@ img {
     color: #fff;
     font-family: 'Happy Monkey', cursive;
     font-size: 3.5em;
+}
+
+#happy-font {
+    font-family: 'Happy Monkey', cursive;
 }
 
 header {
@@ -126,7 +94,7 @@ nav a:active {
 }
 
 footer {
-
+    color: #000;
     position: relative;
     background-color: #fff;
     right: 0;
@@ -159,6 +127,48 @@ footer p{
 
 .nav-pills>li.active>a,.nav-pills>li.active>a:focus,.nav-pills>li.active>a:hover
 {color:#fff;background-color:#a00872}
+
+
+
+
+/* MEDIA QUERIES TO CONTROL SIZE OF CONTENT WHEN TESTED SCREENSIZE IS REACHED */
+@media all and (max-width: 500px) { /* screen size until 500px */
+    body {
+        font-size: 1.4em; 
+        }
+}
+
+@media all and (max-width: 800px) { /* screen size until 800px */
+    #menu h3 {
+        font-size: 1.4em; 
+        }
+    .px-5 p {
+        font-size: 1.4em;
+    }
+}
+
+@media all and (max-width: 620px) { /* screen size until 620px */
+    #menu h3 {
+        font-size: 1.3em; 
+        }
+}
+
+@media all and (max-width: 415px) { /* screen size until 415px */
+    .fa-5x {
+        font-size: 3em; 
+        }
+}
+
+@media all and (max-width: 400px) { /* screen size until 400px */
+    .py-5 {
+        font-size: 1em; 
+        }
+    .card-title {
+        font-size: 1.6em;
+    }
+}
+
+/* END MEDIA QUERIES * /
 
 
 
