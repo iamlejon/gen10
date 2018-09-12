@@ -148,13 +148,25 @@ footer p{
 .card-image {
     border: thin solid #fff;
     background-image: linear-gradient(
-        rgba(0,0,0, .9), 
-        rgba(0,0,0, .4)), 
+        rgba(252, 32, 241, 0.014),
+        rgba(7, 34, 44, 0.9)), 
         url('../images/icecream.png');
 }
 
 .nav-pills>li.active>a,.nav-pills>li.active>a:focus,.nav-pills>li.active>a:hover
 {color:#fff;background-color:#a00872}
+
+.text-stroke-big {
+    font-weight: bolder;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.text-stroke-sm {
+    font-weight: bolder;
+    -webkit-text-stroke-width: .2px;
+    -webkit-text-stroke-color: black;
+}
 
 
 

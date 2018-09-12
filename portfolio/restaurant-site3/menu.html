@@ -24,10 +24,15 @@
         <style>
 
             #menu {
-                margin: 0 auto;
+                margin: 30px auto;
                 background-color: #692E2E;
                 color: #ff8282;
                 font-weight: 525;
+                border: thick solid #fff;
+            }
+
+            #menu h3, th h3{
+                font-family: 'Happy Monkey', cursive;
             }
 
             .menu-item {
@@ -57,31 +62,43 @@
             /* Bervarage Table Styling */
 
             table, th, td {
-                border: 1px solid #000;
                 border-collapse: collapse;
                 padding: 5px 10px;
+                text-align: center;
                 
             }
 
             table {
                 width: 100%;
                 margin: 5px auto;
+                font-size: 1.2em;
+                font-weight: bold;
+                border: thick solid #fff;
+                color: #fff;
+                background-image: linear-gradient(
+                rgba(85, 29, 78, 0.9), 
+                rgba(17, 83, 104, 0.767)), 
+                url('images/bevs.png');
             }
 
-            th, tr {
+            tr {
                 height: 30px;
-                background-color: #fff;
             }
 
-            th {
-                background-color: #ff8282;
-                color: #fff;
+           
+
+            /* .sp-left {
+                background-color: #102f58;
             }
 
-            tr:nth-child(odd) {
-                background-color: #692E2E;
+            .sp-right {
+                background-color: #9e068a;
+            } */
+
+            /* tr:nth-child(odd) {
+                background-color: #e2b9fd;
                 color: #fff;
-            }
+            } */
 
         </style>
 
@@ -220,25 +237,33 @@
                     <thead>
                         <tr>
                             <th colspan="2">
-                                Beverages
+                                <h3>Beverages</h3>
                             </th>
                         </tr>
                         <tr>
-                            <td>Root Beer</td>
-                            <td>$3.00</td>
+                                <td class="sp-left">Drink of The Month! SG Special Brew!</td>
+                                <td class="sp-right">$2.50</td>
+                            </tr>
+                            <tr>
+                                    <td class="sp-left">Iced Tea (Mango, Strawberry, Raspberry, Peach)</td>
+                                    <td class="sp-right">$1.25</td>
+                                </tr>
+                        <tr>
+                            <td class="sp-left">Root Beer</td>
+                            <td class="sp-right">$3.00</td>
                         </tr>
                          <tr>
-                            <td>Bottled Water</td>
-                            <td>$1.25</td>
+                            <td class="sp-left">Bottled Water</td>
+                            <td class="sp-right">$1.25</td>
                         </tr>
                          <tr>
-                            <td>Lemonade</td>
-                            <td>$1.00</td>
+                            <td class="sp-left">Lemonade</td>
+                            <td class="sp-right">$1.00</td>
                         </tr>
-                         <tr>
-                            <td>Iced Tea</td>
-                            <td>$1.25</td>
-                        </tr>
+                        <tr>
+                                <td class="sp-left">Frappucino</td>
+                                <td class="sp-right">$2.75</td>
+                            </tr>
                     </thead>
                 </table>
             </article>
