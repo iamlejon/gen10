@@ -26,7 +26,7 @@
 
         <style>
             #contact-form {
-            margin: 0 auto;
+            margin: 30px auto;
             padding: 40px;
             background-color: #fff;
             color: #000;
@@ -84,27 +84,39 @@
                     
         <section>  
             <article id="contact-form">
-                <form action="submit.html" method="POST">
-                        <label for="name" class="required">Name:</label>
-                        <input type="text" id="name" name="name" required> <br /><br />
-                    
-                        <label for="email" class="required">Email: </label>
-                        <input type="text" id="email" name="email" required> <br /><br />
-                    
-                        <label for="phone" class="required">Phone:</label>
-                        <input type="text" id="phone" name="phone" required> <br /><br />
-                    
+                <form action="#submit.html" method="POST">
+                          <div class="form-group">
+                                <label for="name" class="required">Name:</label>
+                                <input type="text" class="form-control" id="name" name="name" required> <br /><br />
+                          </div>
+                        
+                          <div class="form-group">
+                                <label for="email" class="required">Email: </label>
+                                <input type="text" class="form-control" id="email" name="email" required> <br /><br />
+                          </div>
+                        
+                          <div class="form-group">
+                                <label for="phone" class="required">Phone:</label>
+                                <input type="text" class="form-control" id="phone" name="phone" required> <br /><br />
+                          </div>
+                        
+                    <div class="form-group">
                         <label for="contact" class="required">Reason for Inquiry:</label>
-                        <select id="contact" name="contact" required>
+                        <select class="form-control" id="contact" name="contact" required>
                             <option value="catering" selected>Catering</option>
                             <option value="privateParty"> Private Party</option>
                             <option value="feedback"> Feedback</option>
                             <option value="other"> Other</option>
                         </select>      
+                    </div>
+
                         <br />
                         <br />      
-                        <label for="info">Additional Information</label>
-                        <textarea id="info" name="info"></textarea><br /><br />
+                        <div class="form-group">
+                                <label for="info">Additional Information</label>
+                                <textarea class="form-control" rows="4" id="info" name="info"></textarea><br /><br />
+                        </div>
+                        
                         
                             Have you been to the restaurant?<br />
                             <input type="radio" id="choice1" name="questionnaire" value="no" checked="checked">
@@ -114,17 +126,32 @@
                             <br />
                             <br />
                             Best days to contact you: 
-                            <input type="checkbox" id="monday" name="day" value="monday">
-                            <label for="monday">M</label>
-                            <input type="checkbox" id="tuesday" name="day" value="tuesday">
-                            <label for="tuesday">T</label>
-                            <input type="checkbox" id="wednesdays" name="day" value="wednesday">
-                            <label for="wednesday">W</label>
-                            <input type="checkbox" id="thursday" name="day" value="thursday">
-                            <label for="thursday">Th</label>
-                            <input type="checkbox" id="friday" name="day" value="friday">
-                            <label for="friday">F</label>   
-                        <p><input type="submit" name="submit" value="Send Request"></p>
+                            <div class="form-check-inline">
+                                <input type="checkbox" class="form-check-input" id="monday" name="day" value="monday">
+                                <label class="form-check-label" for="monday">M</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input type="checkbox" class="form-check-input" id="tuesday" name="day" value="tuesday">
+                                <label class="form-check-label" for="tuesday">T</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input type="checkbox" class="form-check-input" id="wednesdays" name="day" value="wednesday">
+                                <label class="form-check-label" for="wednesday">W</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input type="checkbox" class="form-check-input" id="wednesdays" name="day" value="wednesday">
+                                <label class="form-check-label" for="wednesday">W</label>
+                            </div>
+                            <div class="form-check-inline">   
+                                <input type="checkbox" class="form-check-input" id="thursday" name="day" value="thursday">
+                                <label class="form-check-label" for="thursday">Th</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input type="checkbox" class="form-check-input" id="friday" name="day" value="friday">
+                                <label class="form-check-label" for="friday">F</label>
+                            </div>
+
+                        <p><button type="submit" class="btn btn-primary">Send Request</button></p>
                     
                     </form>
                 </article>
