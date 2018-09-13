@@ -62,8 +62,15 @@ nav {
     padding: 0 10px;
     font-family: 'Happy Monkey', cursive;
     font-size: 1.2em;
+    border-radius: 6px;
     
 }
+
+.li-spacing {
+    margin:6px 0;
+}
+
+
 
 
 nav a {      
