@@ -8,8 +8,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #0C9090;
     background-image: linear-gradient(
-        rgba(6, 51, 53, 0.8), 
-        rgba(104, 6, 55, 0.8)), url('../images/cupcakebg.png');
+        rgba(104, 6, 55, 0.8),
+        rgba(6, 51, 53, 0.822)), url('../images/cupcakebg.png');
     background-repeat: repeat;
 }
 
@@ -57,7 +57,7 @@ header h1 {
 nav {
     margin-top: 4px;
     background-color: #3F0E16;
-    border: thin solid #000;
+    border: thick solid rgb(15, 123, 212);
     background-color: #fff;
     padding: 0 10px;
     font-family: 'Happy Monkey', cursive;
@@ -145,9 +145,8 @@ footer p{
 
 .carousel-sp-bla {
     background-image: linear-gradient(
-        rgba(0,0,0, .9), 
-        rgba(0,0,0, .4)), 
-        url('../images/icecream.png');
+        rgba(20, 145, 194, 0.9), 
+        rgba(146, 66, 184, 0.4));
     font-weight: bold;
     color: #fff;
 }
@@ -157,7 +156,7 @@ footer p{
     background-image: linear-gradient(
         rgba(252, 32, 241, 0.014),
         rgba(7, 34, 44, 0.9)), 
-        url('../images/icecream.png');
+        url('../images/excitement.jpeg');
 }
 
 .nav-pills>li.active>a,.nav-pills>li.active>a:focus,.nav-pills>li.active>a:hover
