@@ -5,7 +5,7 @@ function validateForm() {
     var phoneNumberPattern = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
     var emailPattern = /\S+@\S+\.\S+/;
     var successMsg = document.getElementById("formSuccess");
-
+    
 
     if (customerName == "") {
         alert("Name must be filled out");

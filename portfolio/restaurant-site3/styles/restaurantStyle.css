@@ -83,14 +83,17 @@ nav a {
 
 nav a:link {
     color: #80488C;
+    text-decoration: underline;
 }
 
 nav a:visited {
     color: #00B6C7;
+    text-decoration: underline;
 }
 
 nav a:hover {
     font-weight: bold;
+    text-decoration: underline;
 }
 
 nav a:active {
