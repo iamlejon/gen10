@@ -4,6 +4,7 @@ function validateForm() {
     var customerPhone = document.forms["contactForm"]["phone"].value;
     var phoneNumberPattern = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
     var emailPattern = /\S+@\S+\.\S+/;
+    var successMsg = document.getElementById("formSuccess");
 
 
     if (customerName == "") {
@@ -18,6 +19,11 @@ function validateForm() {
     // This checks to see if phone number is 10 digits, ignores formatting
     else if ((customerPhone.match(/\d/g).length!==10)) {
         alert("Phone number invalid.  Please enter a valid 10 digit phone number");
+        return false;
+    }
+    else
+    {
+        successMsg.style.display = "block";
         return false;
     }
     

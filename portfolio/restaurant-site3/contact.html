@@ -110,7 +110,11 @@
             
             <article id="contact-form">
                 <div id="contact-form-area">
-                <form name="contactForm" action="#submit.html" onsubmit="return validateForm()" method="POST">
+                    <div class="panel panel-success" id="formSuccess" style="display:none">
+                        <div class="panel-heading"><i class="fas fa-exclamation-triangle"></i> Thank You! Information has been validated.</div>
+                    </div>
+
+                <form name="contactForm" action="#" onsubmit="return validateForm()" method="POST">
                           <div class="form-group">
                                 <label for="name" class="required">Name:</label>
                                 <input type="text" class="form-control" id="name" name="name" required> <br /><br />
