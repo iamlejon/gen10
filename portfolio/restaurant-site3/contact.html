@@ -2,7 +2,7 @@
 <!--
     Name: Dominique McCloud
     Date Created: September 3, 2018
-    Most recent revision: 9/11/18
+    Most recent revision: 9/14/18
 -->
 
 <html lang="en">
@@ -44,9 +44,7 @@
                 font-weight: bold;
             }
         </style>
-
     </head>
-
 
     <body>
         <header>
@@ -57,146 +55,147 @@
 
             <!--Jumbotron-->
             <div class="row mb-5">
-                    <div class="col-md-12">
-                        <div class="card card-image">
-                            <div class="text-white text-center rgba-stylish-strong py-5 px-4">
-                                <div class="py-5">
+                 <div class="col-md-12">
+                    <div class="card card-image">
+                        <div class="text-white text-center rgba-stylish-strong py-5 px-4">
+                            <div class="py-5">
                 
-                                    <!--Content-->
-                                        <a class="btn peach-gradient"> <i class="fas fa-cookie-bite fa-5x"></i>&nbsp;&nbsp;<i class="far fa-smile-wink fa-5x text-stroke-big" style="color:rgba(255, 255, 255, 0.925)"></i></a>
-                                        <h2 class="card-title pt-3 mb-5 font-bold text-stroke-big" ><span style="color:pink;">BRAND NEW</span> OAK LAWN, DALLAS LOCATION!</h2>
-                                        <p class="px-5 pb-4 text-stroke-sm"><strong>GET YOUR SWEET TOOTHES READY! OUR OAK LAWN LOCATION IS NOW OPEN!</strong> </p>
-                                    <!--Content-->
+                                 <!--Content-->
+                                 <a class="btn peach-gradient"> <i class="fas fa-cookie-bite fa-5x"></i>&nbsp;&nbsp;<i class="far fa-smile-wink fa-5x text-stroke-big" style="color:rgba(255, 255, 255, 0.925)"></i></a>
+                                 <h2 class="card-title pt-3 mb-5 font-bold text-stroke-big" ><span style="color:pink;">BRAND NEW</span> OAK LAWN, DALLAS LOCATION!</h2>
+                                 <p class="px-5 pb-4 text-stroke-sm"><strong>GET YOUR SWEET TOOTHES READY! OUR OAK LAWN LOCATION IS NOW OPEN!</strong> </p>
+                                 <!--Content-->
                 
-                                </div>
-                            </div>
-                        </div>
+                             </div>
+                         </div>
                     </div>
-                </div>
-                <!--Jumbotron-->
+                 </div>
+            </div>
 
+                <!--Jumbotron-->
                 <noscript>
-                        <div class="panel panel-danger">
-                            <div class="panel-heading"><i class="fas fa-exclamation-triangle"></i> This site is best viewed with JavaScript enabled.  Please enable in your browser's settings</div>
-                        </div>
-                    </noscript>
+                    <div class="panel panel-danger">
+                        <div class="panel-heading"><i class="fas fa-exclamation-triangle"></i> This site is best viewed with JavaScript enabled.  Please enable in your browser's settings</div>
+                    </div>
+                </noscript>
         
              <!-- Navigation Bar with Collapse feature for smaller screens-->
              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"  style="border: thin solid #000;margin:0 auto;">
+                     <i class="fas fa-layer-group fa-2x"></i>
+                </button>
                     
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"  style="border: thin solid #000;margin:0 auto;">
-                                <i class="fas fa-layer-group fa-2x"></i>
-                        </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav mr-auto nav-pills">
+                        <li>
+                            <a href="index.html"><i class="fas fa-home fa-2x"></i> <span class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="li-spacing">
+                            <a href="menu.html">Menu</a>
+                        </li>
+
+                        <li class="li-spacing active">
+                             <a href="contact.html">Contact Us</a>
+                        </li>
+                     </ul>
+                </div>
+                <div class="clear-float"></div>
+             </nav>   
                     
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="nav navbar-nav mr-auto nav-pills">
-                                <li>
-                                <a href="index.html"><i class="fas fa-home fa-2x"></i> <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="li-spacing">
-                                <a href="menu.html">Menu</a>
-                                </li>
-                                <li class="li-spacing active">
-                                        <a href="contact.html">Contact Us</a>
-                                    </li>
-                            </ul>
-                        </div>
-                        <div class="clear-float"></div>
-                </nav>   
-                    
-        <section>  
-            <div class="row">
+            <section>  
+                <div class="row">
                     <div class="col-lg-12 col-md-6">
-            
-            <article id="contact-form">
-                <div id="contact-form-area">
-                    <div class="panel panel-success" id="formSuccess" style="display:none">
-                        <div class="panel-heading"><i class="fas fa-exclamation-triangle"></i> Thank You! Information has been validated.</div>
-                    </div>
+                        <article id="contact-form">
+                            <div id="contact-form-area">
+                                <div class="panel panel-success" id="formSuccess" style="display:none">
+                                    <div class="panel-heading"><i class="fas fa-exclamation-triangle"></i> Thank You! Information has been validated.</div>
+                                </div>
 
-                <form name="contactForm" action="#" onsubmit="return validateForm()" method="POST">
-                          <div class="form-group">
-                                <label for="name" class="required">Name:</label>
-                                <input type="text" class="form-control" id="name" name="name" required> <br /><br />
-                          </div>
-                        
-                          <div class="form-group">
-                                <label for="email" class="required">Email: </label>
-                                <input type="text" class="form-control" id="email" name="email" required> <br /><br />
-                          </div>
-                        
-                          <div class="form-group">
-                                <label for="phone" class="required">Phone:</label>
-                                <input type="text" class="form-control" id="phone" name="phone" > <br /><br />
-                          </div>
-                        
-                    <div class="form-group">
-                        <label for="contact" class="required">Reason for Inquiry:</label>
-                        <select class="form-control" id="contact" name="contact" required>
-                            <option value="catering" selected>Catering</option>
-                            <option value="privateParty"> Private Party</option>
-                            <option value="feedback"> Feedback</option>
-                            <option value="other"> Other</option>
-                        </select>      
-                    </div>
+                                <form name="contactForm" action="#" onsubmit="return validateForm()" method="POST">
+                                    <div class="form-group">
+                                          <label for="name" class="required">Name:</label>
+                                          <input type="text" class="form-control" id="name" name="name" required> <br /><br />
+                                    </div>
+                                
+                                    <div class="form-group">
+                                          <label for="email" class="required">Email: </label>
+                                          <input type="text" class="form-control" id="email" name="email" required> <br /><br />
+                                    </div>
+                                
+                                    <div class="form-group">
+                                          <label for="phone" class="required">Phone:</label>
+                                          <input type="text" class="form-control" id="phone" name="phone" > <br /><br />
+                                    </div>
+                                
+                                    <div class="form-group">
+                                        <label for="contact" class="required">Reason for Inquiry:</label>
+                                        <select class="form-control" id="contact" name="contact" required>
+                                            <option value="catering" selected>Catering</option>
+                                            <option value="privateParty"> Private Party</option>
+                                            <option value="feedback"> Feedback</option>
+                                            <option value="other"> Other</option>
+                                        </select>      
+                                    </div>
+                                    <br />
+                                    <br />  
 
-                        <br />
-                        <br />      
-                        <div class="form-group">
-                                <label for="info">Additional Information</label>
-                                <textarea class="form-control" rows="4" id="info" name="info"></textarea><br /><br />
-                        </div>
-                        
-                        
-                            Have you been to the restaurant?<br />
-                            <input type="radio" id="choice1" name="questionnaire" value="no" checked="checked">
-                            <label for="choice1">No</label>
-                            <input type="radio" id="choice2" name="questionnaire" value="yes">
-                            <label for="choice2">Yes</label>      
-                            <br />
-                            <br />
-                            Best days to contact you: 
-                            <div class="form-check-inline">
-                                <input type="checkbox" class="form-check-input" id="monday" name="day" value="monday">
-                                <label class="form-check-label" for="monday">M</label>
-                            </div>
-                            <div class="form-check-inline">
-                                <input type="checkbox" class="form-check-input" id="tuesday" name="day" value="tuesday">
-                                <label class="form-check-label" for="tuesday">T</label>
-                            </div>
-                            <div class="form-check-inline">
-                                <input type="checkbox" class="form-check-input" id="wednesdays" name="day" value="wednesday">
-                                <label class="form-check-label" for="wednesday">W</label>
-                            </div>
-                            <div class="form-check-inline">
-                                <input type="checkbox" class="form-check-input" id="wednesdays" name="day" value="wednesday">
-                                <label class="form-check-label" for="wednesday">W</label>
-                            </div>
-                            <div class="form-check-inline">   
-                                <input type="checkbox" class="form-check-input" id="thursday" name="day" value="thursday">
-                                <label class="form-check-label" for="thursday">Th</label>
-                            </div>
-                            <div class="form-check-inline">
-                                <input type="checkbox" class="form-check-input" id="friday" name="day" value="friday">
-                                <label class="form-check-label" for="friday">F</label>
-                            </div>
+                                    <div class="form-group">
+                                        <label for="info">Additional Information</label>
+                                        <textarea class="form-control" rows="4" id="info" name="info"></textarea><br /><br />
+                                    </div>
+                                    <!--Radio Button section -->
+                                    Have you been to the restaurant?<br />
+                                    <input type="radio" id="choice1" name="questionnaire" value="no" checked="checked">
+                                    <label for="choice1">No</label>
+                                    <input type="radio" id="choice2" name="questionnaire" value="yes">
+                                    <label for="choice2">Yes</label>      
+                                    <br />
+                                    <br />
+                                    <!--Checkbox section -->
+                                    Best days to contact you: 
+                                    <div class="form-check-inline">
+                                        <input type="checkbox" class="form-check-input" id="monday" name="day" value="monday">
+                                        <label class="form-check-label" for="monday">M</label>
+                                    </div>
 
-                        <p><button type="submit" class="btn btn-primary">Send Request</button></p>
-                    
-                    </form>
+                                    <div class="form-check-inline">
+                                        <input type="checkbox" class="form-check-input" id="tuesday" name="day" value="tuesday">
+                                        <label class="form-check-label" for="tuesday">T</label>
+                                    </div>
+
+                                    <div class="form-check-inline">
+                                        <input type="checkbox" class="form-check-input" id="wednesdays" name="day" value="wednesday">
+                                        <label class="form-check-label" for="wednesday">W</label>
+                                    </div>
+
+                                    <div class="form-check-inline">
+                                        <input type="checkbox" class="form-check-input" id="wednesdays" name="day" value="wednesday">
+                                        <label class="form-check-label" for="wednesday">W</label>
+                                    </div>
+
+                                    <div class="form-check-inline">   
+                                        <input type="checkbox" class="form-check-input" id="thursday" name="day" value="thursday">
+                                        <label class="form-check-label" for="thursday">Th</label>
+                                    </div>
+
+                                    <div class="form-check-inline">
+                                        <input type="checkbox" class="form-check-input" id="friday" name="day" value="friday">
+                                        <label class="form-check-label" for="friday">F</label>
+                                    </div>
+                                        <!--Submit Button section -->
+                                        <p><button type="submit" class="btn btn-primary">Send Request</button></p>
+                                 </form>
+                            </div>
+                        </article>
                     </div>
-                </article>
                 </div>
-                </div>
-
             </section>
                 <hr />
-
             <footer>
                 <p>5678 Marvin Blvd, Dallas, TX 75001</p>
                 <p>832-555-5555</p>
             </footer>
-
         </div>
     </body>
 </html>
