@@ -22,6 +22,8 @@
         <link rel="stylesheet" type="text/css" href="styles/restaurantStyle.css">
          <link href="https://fonts.googleapis.com/css?family=Happy+Monkey" rel="stylesheet">
 
+         <script src="scripts/contactform.js"></script>
+
         <!-- Internal Stylesheet -->
 
         <style>
@@ -108,7 +110,7 @@
             
             <article id="contact-form">
                 <div id="contact-form-area">
-                <form action="#submit.html" onsubmit="return validateForm()" method="POST">
+                <form name="contactForm" action="#submit.html" onsubmit="return validateForm()" method="POST">
                           <div class="form-group">
                                 <label for="name" class="required">Name:</label>
                                 <input type="text" class="form-control" id="name" name="name" required> <br /><br />
@@ -121,7 +123,7 @@
                         
                           <div class="form-group">
                                 <label for="phone" class="required">Phone:</label>
-                                <input type="text" class="form-control" id="phone" name="phone" required> <br /><br />
+                                <input type="text" class="form-control" id="phone" name="phone" > <br /><br />
                           </div>
                         
                     <div class="form-group">
