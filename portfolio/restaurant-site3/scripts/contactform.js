@@ -13,12 +13,12 @@ function validateForm() {
     }
     // This checks to see if email is in a valid format
     else if (emailPattern.test(customerEmail) == false) {
-            alert("Email is invalid. Please a valid email. Ex. someone@something.domain");
+            alert("Email is invalid. Please enter a valid email address. Ex. someone@something.domain");
             return false;
     }
     // This checks to see if phone number is 10 digits, ignores formatting
     else if ((customerPhone.match(/\d/g).length!==10)) {
-        alert("Phone number invalid.  Please enter a valid 10 digit phone number");
+        alert("Phone number is invalid.  Please enter a valid 10 digit phone number");
         return false;
     }
     else
