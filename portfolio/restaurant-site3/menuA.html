@@ -1,293 +1,66 @@
 <!DOCTYPE html>
-<!--
-    Name: Dominique McCloud
-    Date Created: September 3, 2018
-    Most recent revision: 9/11/18
--->
-
-<html lang="en">
+<html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Menu</title>
-
-          <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
-        <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="styles/restaurantStyle.css">
-         <link href="https://fonts.googleapis.com/css?family=Happy+Monkey" rel="stylesheet">
-
-        <style>
-
-            #menu {
-                margin: 30px auto;
-                background-color: #692E2E;
-                color: #ff8282;
-                font-weight: 525;
-                border: thick solid #fff;
-            }
-
-            #menu h3, th h3{
-                font-family: 'Happy Monkey', cursive;
-            }
-
-            .menu-item {
-                padding: 30px;
-                text-align: center;
-            
-            }
-
-            .menu-item h3, h4{
-                color: #fff;
-            }
-
-            .menu-item .row:after{
-                content: "";
-                display: table;
-                clear: both;
-            }
-
-            @media screen and (max-width: 600px) {
-                .menu-item {
-                    width: 100%;
-                }
-            }
-
-            /* Bervarage Table Styling */
-
-            table, th, td {
-                border-collapse: collapse;
-                padding: 5px 10px;
-                text-align: center;
-                
-            }
-
-            table {
-                width: 100%;
-                margin: 5px auto;
-                font-size: 1.2em;
-                font-weight: bold;
-                border: thick solid #fff;
-                color: #fff;
-                background-image: linear-gradient(
-                rgba(85, 29, 78, 0.9), 
-                rgba(17, 83, 104, 0.767)), 
-                url('images/bevs.png');
-            }
-
-            tr {
-                height: 30px;
-            }
-
-           
-
-            /* .sp-left {
-                background-color: #102f58;
-            }
-
-            .sp-right {
-                background-color: #9e068a;
-            } */
-
-            /* tr:nth-child(odd) {
-                background-color: #e2b9fd;
-                color: #fff;
-            } */
-
-        </style>
-
-
+        <script type="text/JavaScript" src="scripts/luckySevens.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            rel="stylesheet" type="text/css" />
+            <link href="styles/luckySevens.css" rel="stylesheet" type="text/css">
     </head>
-
-
     <body>
-            
-
-        <header>
-            <span id="restaurant-name">Dessert Island</span>
-        </header>
-        
-       
-
         <div class="container">
-              <!--Jumbotron-->
-            <div class="row mb-5">
-                    <div class="col-md-12">
-                        <div class="card card-image">
-                            <div class="text-white text-center rgba-stylish-strong py-5 px-4">
-                                <div class="py-5">
-                                    <!--Content-->
-                                        <a class="btn peach-gradient"> <i class="fas fa-cookie-bite fa-5x"></i>&nbsp;&nbsp;<i class="far fa-smile-wink fa-5x text-stroke-big" style="color:rgba(255, 255, 255, 0.925)"></i></a>
-                                        <h2 class="card-title pt-3 mb-5 font-bold text-stroke-big" ><span style="color:pink;">BRAND NEW</span> OAK LAWN, DALLAS LOCATION!</h2>
-                                        <p class="px-5 pb-4 text-stroke-sm"><strong>GET YOUR SWEET TOOTHES READY! OUR OAK LAWN LOCATION IS NOW OPEN!</strong> </p>
-                                    <!--Content-->
-                
-                                </div>
-                            </div>
-                        </div>
+            <section>
+            <article id="gameDisplay">
+            <h1>Lucky Sevens</h1>
+                <div class="row" >
+                    <h3>Starting Bet</h3>
+                    <div class="panel panel-default" style="width:40%">
+                        <div class="panel-body" id="startingBet"></div>
                     </div>
                 </div>
-                <!--Jumbotron-->
+
     
-                    
-                    
-            <noscript>
-                <div class="panel panel-danger">
-                    <div class="panel-heading"><i class="fas fa-exclamation-triangle"></i> This site is best viewed with JavaScript enabled.  Please enable in your browser's settings</div>
-                </div>
-            </noscript>
-                    
-            <!-- Navigation Bar with Collapse feature for smaller screens-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"  style="border: thin solid #000;margin:0 auto;">
-                                <i class="fas fa-layer-group fa-2x"></i>
-                        </button>
-                    
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="nav navbar-nav mr-auto nav-pills">
-                                <li>
-                                <a href="index.html"><i class="fas fa-home fa-2x"></i> <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="li-spacing active">
-                                <a href="menu.html">Menu</a>
-                                </li>
-                                <li class="li-spacing">
-                                        <a href="contact.html">Contact Us</a>
-                                    </li>
-                            </ul>
-                        </div>
-                        <div class="clear-float"></div>
-                </nav>       
 
-        <section>
-            
-            <article id="menu">
-                <!--Row 1 of menu items -->
-                <div class="row">
-                        <div class="col-lg-4 col-md-4 menu-item">
-                        <h3>Strawberry Cheesecake</h3>
-                        <p>
-                            Our one of a kind strawberry cheesecake will rock your world.  Topped with fresh strawberries and a deculant strawberry glaze.  This goes great with our signature watermelon lime-aide.
-                            <br />
-                            <h4>$7.25</h4>
-                        </p>
-                        </div>
-                   
-
-                        <div class="col-lg-4 col-md-4 menu-item">
-                            <h3>Hot Fudge Brownie</h3>
-                            <p>
-                                Our Hot Fudge Brownie is served with our oh so tasty homemade Vanilla icecream and will melt in your mouth. Our brownies are chewy and soft in all the right places, you'll definitely want more.
-                                <br />
-                                <h4>$6.50</h4>
-                            </p>
-                            
-                    </div>
-
-                    <div class="col-lg-4 col-md-4 menu-item">
-                            <h3>Frozen Yogurt</h3>
-                            <p>
-                                Our frozen yogurt will send even the dullest person's taste buds into a frenzy.  We have all the flavors! From Raspberry to Bubblegum Passion, try a sample of each or mix and match your favs!
-                                <br />
-                                <h4>$5.85</h4>
-                            </p>
-                    </div>
-
-                </div>
-
-                <!--Row 2 of menu items -->
-                <div class="row">
-
-                        <div class="col-lg-4 col-md-4 menu-item">
-                        <h3>Rockin' Apple Pie</h3>
-                        <p>
-                            Our apple pie is made with the freshest apples delivered daily for a refreshingly sweet taste.  For $1 extra try adding our homemade Vanilla icecream!  You'll be glad you did.
-                            <br />
-                            <h4>$6.25</h4>
-                        </p>
-                        
-                    </div>
-
-                    <div class="col-lg-4 col-md-4 menu-item">
-                            <h3>Grandma's Peach Cobbler</h3>
-                            <p>
-                                Come on, you know there's nothing better than your grandma's Peach Cobbler..well..except for OUR grandma's Peach Cobbler.  For $1 extra try adding our homemade Vanilla icecream!
-                                <br />
-                                <h4>$6.50</h4>
-                            </p>
-                            
-                    </div>
-
-                    <div class="col-lg-4 col-md-4 menu-item">
-                            <h3>Banana Pudding</h3>
-                            <p>
-                                Did someone say Banana Pudding? Yes, be prepared our Banana Pudding is out of this world.  Are your senses even ready?  Made with waffers Vanilla Crackers, you'll love this!
-                                <br />
-                                <h4>$7.25</h4>
-                            </p>
-                    </div>
-
-                </div>
-
-            </article>
-
-            <article id="beverages">
-                <div class="row">
-                        <div class="col-lg-12 col-md-12">
-
-                <table>
-                    <thead>
-                        <tr>
-                            <th colspan="2">
-                                <h3>Beverages</h3>
-                            </th>
-                        </tr>
-                        <tr>
-                                <td class="sp-left">Drink of The Month! SG Special Brew!</td>
-                                <td class="sp-right">$2.50</td>
-                            </tr>
-                            <tr>
-                                    <td class="sp-left">Iced Tea (Mango, Strawberry, Raspberry, Peach)</td>
-                                    <td class="sp-right">$1.25</td>
-                                </tr>
-                        <tr>
-                            <td class="sp-left">Root Beer</td>
-                            <td class="sp-right">$3.00</td>
-                        </tr>
-                         <tr>
-                            <td class="sp-left">Bottled Water</td>
-                            <td class="sp-right">$1.25</td>
-                        </tr>
-                         <tr>
-                            <td class="sp-left">Lemonade</td>
-                            <td class="sp-right">$1.00</td>
-                        </tr>
-                        <tr>
-                                <td class="sp-left">Frappucino</td>
-                                <td class="sp-right">$2.75</td>
-                            </tr>
-                    </thead>
-                </table>
+    <form name="displayEvens" onsubmit="return rollDice();">
+            <div class="form-group">
+                <label for="startingBet">Starting Bet</label>
+                <!-- <input type="number" class="form-control" id="startingBet" style="width:20%"> -->
             </div>
-                </div>
-
-            </article>
-
+            <button type="submit" id="submitButton" class="btn btn-primary">Click to Place Bet & Play</button>
             
-        </section>
+    </form>
+    </article> 
 
-        <hr />
-        <footer>
-            
-            <p>5678 Marvin Blvd, Dallas, TX 75001</p>
-            <p>832-555-5555</p>
-        </footer>
-            
-    </div>
-    </body>
+    <article id="results">
+    <table id="results" class="table table-striped" style="display:none;">
+        
+        <thead>
+                <h1> Results</h1>
+            <tr>
+                <th style="width:50%">Starting Bet</th>
+                <th style="width:50%">$<span id="startingBetDisplay">$</span></th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                Total Rolls Before Going Broke
+            </td>
+            <td>
+                <span id="rolls">#</span>
+            </td>
+        </tr>
+        <tr>
+            <td>Highest Amount Won</td>
+            <td>$<span id="highestWonDisplay"></span></td>
+        </tr>
+        <tr>
+            <td>Roll Count at Highest Amount Won</td>
+            <td>#<span id="highestRollCountDisplay"></span></td>
+        </tr>
+    </tbody>
+    </table>
+    </article>
+    </section>
+</div>
+</body>
 </html>
