@@ -8,8 +8,7 @@ function placeBetGreeting() {
     startingBet = parseFloat(Math.round(prompt("Enter your bet in $ Dollars"))).toFixed(2);
     accountBalance = parseFloat(startingBet);
     if(accountBalance <= 0 || accountBalance=="" || isNaN(accountBalance)){
-        alert("You must enter a numeric number greater than 0")
-        placeBetGreeting();
+        alert("You must enter a numeric number greater than 0.  Try again.")
         return false;
     } else {
         document.getElementById("startingBet").innerText = "$"+startingBet;
@@ -28,11 +27,13 @@ var resultsQA = []; //This is to self QA check in console to see relation and hi
 
 //The clear all function will clear all totals, objects, arrays, and displays so that everything is reset for a new round, then will call the placeBetGreeting.
 function clearAll(){
+    accountBalance = 0;
     currentTotalRolls=0;
     startingBet=0;
     sum=0;
     pairs = {};
     resultsQA = [];
+    document.getElementById("startingBet").innerText = "$"+startingBet;
     document.getElementById("results").style.display = "none";
     document.getElementById("submitButton").innerText = "Click to Play";
     placeBetGreeting();
@@ -75,8 +76,10 @@ function rollDice() {
         var highWonFinal = highestWon < startingBet ? startingBet : highestWon;
         var rollCountFinal = highestWon < startingBet ? 0 : rollCountAtHighestWon;
         
-       
+       if(currentTotalRolls > 0) {
         document.getElementById("results").style.display = "block";
+       }
+        
         document.getElementById("startingBetDisplay").innerText = (startingBet);
         document.getElementById("rolls").innerText = currentTotalRolls;
         document.getElementById("highestRollCountDisplay").innerText = rollCountFinal;
