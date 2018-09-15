@@ -23,7 +23,7 @@ var diceB = 0; // Dice number 2
 var sum; // the sum of two dices added together
 var currentTotalRolls = 0; // To keep track of roll count per round
 var pairs = {}; // This will house they key value relationship between the current roll count and current amount held
-var sumEachRound = []; //This is to self QA check in console that sum is accurate in relation to player's current amount
+var resultsQA = []; //This is to self QA check in console to see relation and history between the dice rolled vs the account balance each round
 
 
 //The clear all function will clear all totals, objects, arrays, and displays so that everything is reset for a new round, then will call the placeBetGreeting.
@@ -32,7 +32,7 @@ function clearAll(){
     startingBet=0;
     sum=0;
     pairs = {};
-    sumEachRound = [];
+    resultsQA = [];
     document.getElementById("results").style.display = "none";
     document.getElementById("submitButton").innerText = "Click to Play";
     placeBetGreeting();
@@ -58,7 +58,7 @@ function rollDice() {
         
             currentTotalRolls++;
             pairs[currentTotalRolls] = accountBalance; //Key Value relationship between currentTotalRolls and accountBalance
-            sumEachRound.push(sum); //this pushes dice sum to an array for QA Self checking purposes to ensure correct data/flow. you can compare sumEachRound to pairs in console
+            resultsQA.push([sum,accountBalance]); //This is to self QA test check in console to see relation and history between the dice rolled vs the account balance each round
         }
 
     
