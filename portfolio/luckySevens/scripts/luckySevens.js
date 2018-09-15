@@ -3,7 +3,7 @@ var startingBet; // The amount player is starting with
 
 /*This function asks user to enter bet in dollars, fixes the starting bet to 2 decimal places and converts it back to a number since .toFixed converts to a string.
   The parseFloat is used to prevent bugs and ensure value is always a number not a string for math operation purposes
-  If user enters a non numeric number, it will display error and user will try again*/
+  If user enters a non numeric number or number less than or equal to 0, it will display error and user will try again*/
 function placeBetGreeting() {
     startingBet = parseFloat(Math.round(prompt("Enter your bet in $ Dollars"))).toFixed(2);
     accountBalance = parseFloat(startingBet);
