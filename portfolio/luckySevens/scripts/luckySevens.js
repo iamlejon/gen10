@@ -34,14 +34,14 @@ function clearAll(){
     pairs = {};
     sumEachRound = [];
     document.getElementById("results").style.display = "none";
-    document.getElementById("submitButton").innerText = "Play";
+    document.getElementById("submitButton").innerText = "Click to Play";
     placeBetGreeting();
     return false;
 }
 
 
 function rollDice() {
-    if(accountBalance==0) { //When user clicks play again button, if player amount is 0 it resets all data for new round.
+    if(accountBalance==0 || accountBalance==null) { //When user clicks play again button, if player amount is 0 it resets all data for new round.
         clearAll(); // After data is reset user will be prompted for new bet and function will continue with calculations below.
     }
         while(Number(accountBalance) > Number(0)){
@@ -58,7 +58,7 @@ function rollDice() {
         
             currentTotalRolls++;
             pairs[currentTotalRolls] = accountBalance; //Key Value relationship between currentTotalRolls and accountBalance
-            sumEachRound.push(sum); //this pushes dice sum to an array for QA Self checking purposes to ensure correct data/flow
+            sumEachRound.push(sum); //this pushes dice sum to an array for QA Self checking purposes to ensure correct data/flow. you can compare sumEachRound to pairs in console
         }
 
     
