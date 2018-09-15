@@ -2,7 +2,6 @@ function validateForm() {
     var customerName = document.forms["contactForm"]["name"].value;
     var customerEmail = document.forms["contactForm"]["email"].value;
     var customerPhone = document.forms["contactForm"]["phone"].value;
-    var phoneNumberPattern = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
     var emailPattern = /\S+@\S+\.\S+/;
     var successMsg = document.getElementById("formSuccess");
     
@@ -16,8 +15,8 @@ function validateForm() {
             alert("Email is invalid. Please enter a valid email address. Ex. someone@something.domain");
             return false;
     }
-    // This checks to see if phone number is 10 digits, ignores formatting
-    else if ((customerPhone.match(/\d/g).length!==10)) {
+    // This checks to see if string contains letters or if phone number is not 10 digits, note* ignores formatting so (555)-555-5555 would be fine.
+    else if ((/[a-z]/i.test(customerPhone) == true || customerPhone.match(/\d/g).length!==10)) {
         alert("Phone number is invalid.  Please enter a valid 10 digit phone number");
         return false;
     }
