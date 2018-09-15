@@ -35,7 +35,7 @@ function clearAll(){
     resultsQA = [];
     document.getElementById("startingBet").innerText = "$"+startingBet;
     document.getElementById("results").style.display = "none";
-    document.getElementById("submitButton").innerText = "Click to Play";
+    document.getElementById("submitButton").innerText = "Play";
     placeBetGreeting();
     return false;
 }
