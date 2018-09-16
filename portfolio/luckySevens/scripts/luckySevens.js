@@ -9,6 +9,7 @@ function placeBetGreeting() {
     accountBalance = parseFloat(startingBet);
     if(accountBalance <= 0 || accountBalance=="" || isNaN(accountBalance)){
         alert("You must enter a numeric number greater than 0.  Try again.")
+        accountBalance = null; // resets accountBalance to nothing
         return false;
     } else {
         document.getElementById("startingBet").innerText = "$"+startingBet;
