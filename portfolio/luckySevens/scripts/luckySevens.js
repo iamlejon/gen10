@@ -83,7 +83,16 @@ function rollDice() {
         document.getElementById("startingBetDisplay").innerText = (startingBet);
         document.getElementById("rolls").innerText = currentTotalRolls;
         document.getElementById("highestRollCountDisplay").innerText = rollCountFinal;
-        document.getElementById("highestWonDisplay").innerText = highWonFinal;
+
+        //small workout to include the .00 at the end of the highWonFinal result.  If it's the same as the starting bet, its already included because of the toFixed method
+        //But since toFixed converts that to a string, and we convert it back to a number for math calcs, the .00 has to be added back in the results table display
+        if(highWonFinal == startingBet) {
+            document.getElementById("highestWonDisplay").innerText = highWonFinal;
+        }
+        else {
+            document.getElementById("highestWonDisplay").innerText = highWonFinal + ".00";
+        }
+
         document.getElementById("submitButton").innerText = "Play Again?";
         return false;
     }
